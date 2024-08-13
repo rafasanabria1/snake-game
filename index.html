@@ -9,7 +9,35 @@
 </head>
 
 <body>
-  <canvas id="canvas" width='400' height='400'></canvas>
+  <header>
+    <p>Mayor puntuación histórica <span id="max-points">0</span></p>
+    <p>Puntos actuales <span id='points'>0</span></p>
+  </header>
+  <main>
+    <canvas id="canvas" width='400' height='400'></canvas>
+    <section id='menu'>
+      <div id="speed">
+        <label for="game-speed">Dificultad:</label>
+        <select id="game-speed">
+          <option value="5">Fácil</option>
+          <option value="15" selected>Intermedio</option>
+          <option value="25">Difícil</option>
+          <option value="30">Muy difícil</option>
+        </select>
+      </div>
+      <div id="size">
+        <label for="map-size">Tamaño:</label>
+        <select id="map-size">
+          <option value="10">Pequeño</option>
+          <option value="20" selected>Mediano</option>
+          <option value="40">Grande</option>
+        </select>
+      </div>
+      <div>
+        <button id="reset">Reiniciar</button>
+      </div>
+    </section>
+  </main>
   <script type='module' src='game.js'></script>
 </body>
 

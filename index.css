@@ -32,12 +32,45 @@ p {
 
 
 body {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   place-items: center;
+  justify-content: center;
+
+  & p {
+    text-align: center;
+    font-weight: bold;
+    margin: 0.2em;
+
+    & span {
+      font-size: 1.2em;
+    }
+  }
 }
 
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  >div {
+    padding: 0.5em
+  }
+}
+
+#speed,
+#size {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+}
+
+
 canvas {
-  border: solid 1px black;
+  border: solid 1px #ddd;
   height: 400px;
   width: 400px;
 }
